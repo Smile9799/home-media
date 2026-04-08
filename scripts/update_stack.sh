@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STACK_DIR="/opt/home-media"
+STACK_DIR="/opt/media"
 
 echo "Navigating to stack directory: $STACK_DIR"
 cd "$STACK_DIR" || exit

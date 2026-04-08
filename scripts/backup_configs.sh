@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Define paths
-BACKUP_DIR="/opt/home-media/backups"
-SOURCE_DIR="/opt/home-media/config"
+BACKUP_DIR="/opt/media/backups"
+SOURCE_DIR="/opt/media/config"
 DATE=$(date +%Y-%m-%d_%H-%M-%S)
 BACKUP_FILE="$BACKUP_DIR/arr_configs_$DATE.tar.gz"
 
 echo "Starting backup of Arr stack configurations..."
 
 # Compress the config directory
-tar -czf "$BACKUP_FILE" -C /opt/home-media config
+tar -czf "$BACKUP_FILE" -C /opt/media config
 
 # Verify if the backup was successful
 if [ $? -eq 0 ]; then

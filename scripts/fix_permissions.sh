@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the data path
-DATA_DIR="/opt/home-media/data"
+DATA_DIR="/opt/media/data"
 TARGET_UID="1000"
 TARGET_GID="1000"
 

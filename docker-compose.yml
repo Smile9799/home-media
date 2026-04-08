@@ -29,7 +29,7 @@ services:
       - TZ=${TZ}
       - WEBUI_PORT=8080
     volumes:
-      - /opt/home-media/config/qbittorrent:/config
+      - /opt/media/config/qbittorrent:/config
       - ${ROOT_DIR}:/data 
     restart: unless-stopped
     depends_on:
@@ -46,7 +46,7 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /opt/home-media/config/prowlarr:/config
+      - /opt/media/config/prowlarr:/config
     ports:
       - 9696:9696
     restart: unless-stopped
@@ -59,7 +59,7 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /opt/home-media/config/sonarr:/config
+      - /opt/media/config/sonarr:/config
       - ${ROOT_DIR}:/data 
     ports:
       - 8989:8989
@@ -73,7 +73,7 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /opt/home-media/config/radarr:/config
+      - /opt/media/config/radarr:/config
       - ${ROOT_DIR}:/data 
     ports:
       - 7878:7878
@@ -90,7 +90,7 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /opt/home-media/config/jellyfin:/config
+      - /opt/media/config/jellyfin:/config
       - ${ROOT_DIR}/media:/data/media 
     ports:
       - 8096:8096
@@ -106,7 +106,7 @@ services:
       - TZ=${TZ}
       - VERSION=docker
     volumes:
-      - /opt/home-media/config/plex:/config
+      - /opt/media/config/plex:/config
       - ${ROOT_DIR}/media:/data/media 
     restart: unless-stopped
 
@@ -122,5 +122,5 @@ services:
     ports:
       - 5055:5055
     volumes:
-      - /opt/home-media/config/jellyseerr:/app/config
+      - /opt/media/config/jellyseerr:/app/config
     restart: unless-stopped

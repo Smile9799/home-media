@@ -4,7 +4,7 @@
 set -e
 
 # Define variables
-BASE_DIR="/opt/home-media"
+BASE_DIR="/opt/media"
 TARGET_UID="1000"
 TARGET_GID="1000"
 
